@@ -21,7 +21,6 @@ PROPRIETARY_FILES := \
     lib/libAF.so \
     lib/libsft_af_ctrl.so \
     lib/libdeflicker.so \
-    lib/libynoise.so \
     lib/libspaf.so \
     lib/liblsc.so \
     lib/libAl_Awb.so \
@@ -29,8 +28,7 @@ PROPRIETARY_FILES := \
     lib/libae.so \
     lib/libawb.so \
     lib/hw/camera.sc8830.so \
-    lib/hw/sensors.sc8830.so \
-    lib/libyasalgo.so
+    lib/hw/sensors.sc8830.so
 
 PRODUCT_COPY_FILES += \
     $(foreach f,$(PROPRIETARY_FILES),vendor/samsung/j1x3g/proprietary/$(f):system/$(f))
